@@ -1,8 +1,18 @@
+body {
+  background-color: #ffffff;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0;
   text-align: center;
+  color: #213547;
+}
+
+
+button {
+  background-color: #f9f9f9;
 }
 
 .logo {
@@ -68,6 +78,7 @@
   background-color: #176cd9;
   width: 15em;
   margin: 1em;
+  color: #eeeeee;
 }
 
 .match4 {
