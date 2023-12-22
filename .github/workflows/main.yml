@@ -33,7 +33,7 @@ jobs:
         run: |
           cd xmas23
           npm install
-          npm run build
+          vite build --base=/static
       # Runs a set of commands using the runners shell
       - name: Deploy
         run: |
