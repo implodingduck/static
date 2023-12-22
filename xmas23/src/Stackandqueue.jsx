@@ -40,20 +40,20 @@ function Stackandqueue() {
         }
       </div>
       <div className="sqleft">
-      <ul>
+      <div className="word">
       {
         stack.map( (v, i) => {
-          return (<li key={i}>{v}</li>);
+          return (<div className="letter" key={i}>{v}</div>);
         })
       }
-      </ul>
+      </div>
         <button onClick={handleStackButton}>^</button>
       </div>
       <div className="sqright">
         <div className="word">
         {
-          queue.map( (v) => {
-            return v;
+          queue.map( (v, i) => {
+            return (<div className="letter" key={i}>{v}</div>);
           })
         }
         </div>

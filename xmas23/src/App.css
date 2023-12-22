@@ -100,19 +100,34 @@ body button {
   width: 28%;
   float: left;
 }
-.sqleft ul {
+.sqleft .word {
   padding: 0;
   margin: 0;
-  height: 10em;
+  height: 12em;
+  border-right: 1px dashed #213547;
 }
 .sqleft li {
   list-style: none;
 }
 
 .sqright {
-  width: 70%;
+  padding-left: 3%;
+  width: 67%;
   float: left;
 }
 .sqright .word {
-  height: 10em;
+  height: 12em;
+}
+
+.sqleft .letter {
+  float: none;
+  margin: .25em auto;
+}
+.letter {
+  display: block;
+  border: 1px solid #213547;
+  padding .25em;
+  margin: .1em;
+  width: 2em;
+  float: left;
 }
