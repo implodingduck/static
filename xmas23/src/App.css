@@ -95,3 +95,24 @@ body button {
 .match4.selected {
   background-color: #cccccc;
 }
+
+.sqleft {
+  width: 28%;
+  float: left;
+}
+.sqleft ul {
+  padding: 0;
+  margin: 0;
+  height: 10em;
+}
+.sqleft li {
+  list-style: none;
+}
+
+.sqright {
+  width: 70%;
+  float: left;
+}
+.sqright .word {
+  height: 10em;
+}
