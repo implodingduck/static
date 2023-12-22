@@ -8,11 +8,11 @@ body {
   padding: 0;
   text-align: center;
   color: #213547;
-  min-width: 450px;
+  min-width: 360px;
 }
 
 
-button {
+body button {
   background-color: #f9f9f9;
 }
 
