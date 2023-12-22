@@ -8,6 +8,7 @@ body {
   padding: 0;
   text-align: center;
   color: #213547;
+  min-width: 450px;
 }
 
 
@@ -59,19 +60,19 @@ button {
 }
 
 .color0{
-  background-color: #00ff00;
+  background-color: #f2f2f2;
 }
 
 .color1{
-  background-color: #ff0000;
+  background-color: #aefd5f;
 }
 
 .color2{
-  background-color: #ff00ff;
+  background-color: #ff9aff;
 }
 
 .color3{
-  background-color: #0000ff;
+  background-color: #70a8ff;
 }
 
 .submit {
