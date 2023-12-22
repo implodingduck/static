@@ -47,7 +47,7 @@ function Stackandqueue() {
         })
       }
       </div>
-        <button onClick={handleStackButton}>^</button>
+        <button onClick={handleStackButton}>&uarr;</button>
       </div>
       <div className="sqright">
         <div className="word">
@@ -57,7 +57,7 @@ function Stackandqueue() {
           })
         }
         </div>
-        <button onClick={handleQueueButton}>&lt;&mdash;</button>
+        <button onClick={handleQueueButton}>&larr;</button>
       </div>
       <div>
         <button className="submit" onClick={handleSubmit}>Submit</button>
