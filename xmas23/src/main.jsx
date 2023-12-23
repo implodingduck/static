@@ -14,7 +14,7 @@ import {
 const router = createHashRouter([
   {
     path: "/",
-    element: <App />
+    element: <Carols />
   },
   {
     path: "/carols",

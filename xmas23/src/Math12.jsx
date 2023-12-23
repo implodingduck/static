@@ -2,12 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Link } from "react-router-dom";
 
 function Math12() {
 
+  const [answer, setAnswer] = useState("")
+  const [showNext, setShowNext] = useState(false)
 
   const handleSubmit = (e) => {
-    //Check to see if value is 75
+    setShowNext(answer == "75")//Check to see if value is 75
   }
 
   return (
@@ -21,15 +24,16 @@ function Math12() {
         <p><span>Y = </span><img src="tdom8.png" /><span> + </span><img src="tdom6.png" /></p>
         <p><span>Z = </span><img src="tdom7.png" /><span> * </span><img src="tdom5.png" /></p>
 
-        <p><span>(A + C) * X / ((B + Y) - Z) = ???</span></p>
+        <p><span>(A + C) * X / ((B + Y) - Z) = ?</span></p>
       </div>
 
       <fieldset>
-        <label>Answer: <input type="text" /></label>
+        <label>Answer: <input type="text" value={answer} onChange={(e) => setAnswer(e.target.value) } /></label>
       </fieldset>
 
       <div>
         <button className="submit" onClick={handleSubmit}>Submit</button>
+        { showNext && <div className="next"><Link to="/sq">Next</Link></div>  }
       </div>
       <div className="footer">
         <p>* means multiplication</p>

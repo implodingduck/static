@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Link } from "react-router-dom";
 
 function Carols() {
 
@@ -9,6 +10,7 @@ function Carols() {
   const [chipmunks, setChipmunks] = useState("")
   const [rudolph, setRudolph] = useState("")
   const [sleigh, setSleigh] = useState("")
+  const [showNext, setShowNext] = useState(false)
 
   const handleSubmit = (e) => {
     //Check to see if value is correct
@@ -16,7 +18,8 @@ function Carols() {
     //Christmas
     //Games
     //together
-    alert(frosty + " | " + chipmunks + " | " + rudolph + " | " + sleigh)
+    //alert(frosty + " | " + chipmunks + " | " + rudolph + " | " + sleigh)
+    setShowNext(frosty.toLowerCase() == "play" && chipmunks.toLowerCase() == "christmas" && rudolph.toLowerCase() == "games" && sleigh.toLowerCase() == "together")
   }
 
   return (
@@ -36,6 +39,7 @@ Join in any reindeer <input type="text" value={rudolph} onChange={(e) => setRudo
 
 <p>Come on, it’s lovely weather for a sleigh ride <input type="text" value={sleigh} onChange={(e) => setSleigh(e.target.value) } /> with you</p>
 <button className="submit" onClick={handleSubmit}>Submit</button>
+      { showNext && <div className="next"><Link to="/math12">Next</Link></div>  }
       </div>
     </>
   )

@@ -2,8 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Link } from "react-router-dom";
 
 function Match4() {
+  const [showNext, setShowNext] = useState(false)
+  const [message, setMessage] = useState("")
   const [count, setCount] = useState(0)
   const [answers, setAnswers] = useState([
     {
@@ -87,6 +90,7 @@ function Match4() {
   const [selections, setSelections] = useState([])
 
   const handleSelect = (e) => {
+    setMessage("")
     let selection = e.target.innerHTML
     let selectedItem = optionslist.find( o => o.value == selection );
     let selectedItems = optionslist.filter( o => o.selected === true);
@@ -108,7 +112,7 @@ function Match4() {
   const handleSubmit = (e) => {
     let selectedItems = optionslist.filter( o => o.selected === true);
     if (selectedItems.length != 4){
-      alert("You must select 4 items...")
+      setMessage("You must select 4 items...")
     }else{
       let items = []
       selectedItems.map((s, i) => {
@@ -133,9 +137,11 @@ function Match4() {
           }
         }));
       }else{
-        alert("Did not match...")
+        setMessage("Did not match...")
       }
-
+      let isComplete = answers.filter( a => a.visible === true);
+      console.log(isComplete)
+      setShowNext(isComplete.length >= 3);
     }
   }
 
@@ -157,6 +163,7 @@ function Match4() {
 
       })}
       </div>
+      <div className="message">{message}</div>
       <div>
       { optionslist.map((s, i) => {
             return (s.visible ? <button className={(s.selected) ? "match4 selected i" + (i % 4)  : "match4 i" + (i % 4)} onClick={handleSelect} key={i}>{s.value}</button> : "")
@@ -172,6 +179,7 @@ function Match4() {
       //       return JSON.stringify(s);
       //   })
       }
+      { showNext && <div className="next"><Link to="/">Next</Link></div>  }
       </div>
     </>
   )

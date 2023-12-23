@@ -2,19 +2,22 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Link } from "react-router-dom";
 
 function Stackandqueue() {
   const [stack, setStack] = useState([])
   const [queue, setQueue] = useState([
     "i","h","l","g","s","e"
   ])
+  const [showNext, setShowNext] = useState(false)
 
   //grinch "n","h","r","c","g","i"
   //sleigh "i","h","l","g","s","e"
 
   const handleSubmit = (e) => {
     //alert(queue.join() == "g,r,i,n,c,h")
-    alert(queue.join() == "s,l,e,i,g,h")
+    //alert(queue.join() == "s,l,e,i,g,h")
+    setShowNext(queue.join() == "s,l,e,i,g,h")
   }
   const handleReset = (e) => {
     setStack([])
@@ -68,9 +71,10 @@ function Stackandqueue() {
         </div>
         <button onClick={handleQueueButton}>&larr;</button>
       </div>
-      <div>
+      <div className="buttonsection">
         <button className="submit" onClick={handleSubmit}>Submit</button>
         <button className="reset" onClick={handleReset}>Reset</button>
+        { showNext && <div className="next"><Link to="/match4">Next</Link></div>  }
       </div>
     </>
   )
