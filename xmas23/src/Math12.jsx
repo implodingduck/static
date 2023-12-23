@@ -14,12 +14,12 @@ function Math12() {
     <>
       <div className="math12">
         <h2>Twelve Days of Math-mas</h2>
-        <p><span>A = </span><img src="/tdom12.png" /><span> / </span><img src="/tdom3.png" /></p>
-        <p><span>B = </span><img src="/tdom11.png" /><span> * </span><img src="/tdom2.png" /></p>
-        <p><span>C = </span><img src="/tdom10.png" /><span> + </span><img src="/tdom1.png" /></p>
-        <p><span>X = </span><img src="/tdom9.png" /><span> - </span><img src="/tdom4.png" /></p>
-        <p><span>Y = </span><img src="/tdom8.png" /><span> + </span><img src="/tdom6.png" /></p>
-        <p><span>Z = </span><img src="/tdom7.png" /><span> * </span><img src="/tdom5.png" /></p>
+        <p><span>A = </span><img src="tdom12.png" /><span> / </span><img src="tdom3.png" /></p>
+        <p><span>B = </span><img src="tdom11.png" /><span> * </span><img src="tdom2.png" /></p>
+        <p><span>C = </span><img src="tdom10.png" /><span> + </span><img src="tdom1.png" /></p>
+        <p><span>X = </span><img src="tdom9.png" /><span> - </span><img src="tdom4.png" /></p>
+        <p><span>Y = </span><img src="tdom8.png" /><span> + </span><img src="tdom6.png" /></p>
+        <p><span>Z = </span><img src="tdom7.png" /><span> * </span><img src="tdom5.png" /></p>
 
         <p><span>(A + C) * X / ((B + Y) - Z) = ???</span></p>
       </div>
