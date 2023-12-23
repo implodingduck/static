@@ -6,15 +6,20 @@ import './App.css'
 function Stackandqueue() {
   const [stack, setStack] = useState([])
   const [queue, setQueue] = useState([
-    "n","h","r","c","g","i"
+    "i","h","l","g","s","e"
   ])
 
+  //grinch "n","h","r","c","g","i"
+  //sleigh "i","h","l","g","s","e"
+
   const handleSubmit = (e) => {
-    alert(queue.join() == "g,r,i,n,c,h")
+    //alert(queue.join() == "g,r,i,n,c,h")
+    alert(queue.join() == "s,l,e,i,g,h")
   }
   const handleReset = (e) => {
     setStack([])
-    setQueue(["n","h","r","c","g","i"])
+    //setQueue(["n","h","r","c","g","i"])
+    setQueue(["i","h","l","g","s","e"])
   }
 
   const handleStackButton = (e) => {
@@ -30,7 +35,9 @@ function Stackandqueue() {
   return (
     <>
       <div>
-        <h2>Stack and Queue</h2>
+        <h2>Present Bag and Elves</h2>
+        <p>When Santa grabs a present from his bag, he takes the first one off of the top, regardless of how long a present has been in the bag.</p>
+        <p>The Elves work in an orderly fashion where items need to wait until the item before them is complete before processing.</p>
         {
           // ["t","h","e","g","r","i","n","c","h"] .map(value => ({ value, sort: Math.random() }))
           // .sort((a, b) => a.sort - b.sort)
@@ -40,16 +47,18 @@ function Stackandqueue() {
         }
       </div>
       <div className="sqleft">
-      <div className="word">
-      {
-        stack.map( (v, i) => {
-          return (<div className="letter" key={i}>{v}</div>);
-        })
-      }
-      </div>
+        <b>Bag</b>
+        <div className="word">
+        {
+          stack.map( (v, i) => {
+            return (<div className="letter" key={i}>{v}</div>);
+          })
+        }
+        </div>
         <button onClick={handleStackButton}>&uarr;</button>
       </div>
       <div className="sqright">
+        <b>Elves</b>
         <div className="word">
         {
           queue.map( (v, i) => {

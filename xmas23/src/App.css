@@ -117,6 +117,7 @@ body button {
 }
 .sqright .word {
   height: 12em;
+  padding-left: 5%;
 }
 
 .sqleft .letter {

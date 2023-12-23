@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Link } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
         <ul>
           <li><Link to="match4">Match4</Link></li>
           <li><Link to="sq">Stack and Queue</Link></li>
+          <li><Link to="math12">Twelve Days of Math</Link></li>
         </ul>
       </div>
       <div className="card">

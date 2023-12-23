@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Match4 from './Match4.jsx'
 import Stackandqueue from './Stackandqueue.jsx'
+import Math12 from './Math12.jsx'
 import './index.css'
 import {
   createHashRouter,
@@ -21,6 +22,10 @@ const router = createHashRouter([
   {
     path: "/sq",
     element: <Stackandqueue />
+  },
+  {
+    path: "/math12",
+    element: <Math12 />
   },
 ]);
 
