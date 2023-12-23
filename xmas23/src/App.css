@@ -136,3 +136,21 @@ div p {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+.math12 p {
+  min-height: 130px;
+  line-height: 130px;
+
+}
+.math12 p span {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: normal;
+  font-size: 2em;
+}
+
+.math12 p img {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 1em;
+}
