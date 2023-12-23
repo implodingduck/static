@@ -10,7 +10,7 @@ function Math12() {
   const [showNext, setShowNext] = useState(false)
 
   const handleSubmit = (e) => {
-    setShowNext(answer == "75")//Check to see if value is 75
+    setShowNext(answer.trim() == "75")//Check to see if value is 75
   }
 
   return (

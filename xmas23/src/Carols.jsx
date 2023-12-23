@@ -19,7 +19,7 @@ function Carols() {
     //Games
     //together
     //alert(frosty + " | " + chipmunks + " | " + rudolph + " | " + sleigh)
-    setShowNext(frosty.toLowerCase() == "play" && chipmunks.toLowerCase() == "christmas" && rudolph.toLowerCase() == "games" && sleigh.toLowerCase() == "together")
+    setShowNext(frosty.toLowerCase().trim() == "play" && chipmunks.toLowerCase().trim() == "christmas" && rudolph.toLowerCase().trim() == "games" && sleigh.toLowerCase().trim() == "together")
   }
 
   return (
