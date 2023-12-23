@@ -153,4 +153,5 @@ div p {
   display: inline-block;
   vertical-align: middle;
   padding: 0 1em;
+  width: 100px;
 }
