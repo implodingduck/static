@@ -11,6 +11,7 @@ function App() {
     <>
       <div>
         <ul>
+          <li><Link to="carols">Carols</Link></li>
           <li><Link to="match4">Match4</Link></li>
           <li><Link to="sq">Stack and Queue</Link></li>
           <li><Link to="math12">Twelve Days of Math</Link></li>

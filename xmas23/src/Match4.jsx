@@ -143,7 +143,7 @@ function Match4() {
     <>
       <div>
         <h2>Christmas Commonality</h2>
-        <p>Bing Crosb, Danny Kaye, Rosemary Clooney and Vera-Ellen are all connected to White Christmas. Can you find other groups of four that share a commonality?</p>
+        <p>Bing Crosby, Danny Kaye, Rosemary Clooney and Vera-Ellen are all connected to White Christmas. Can you find other groups of four that share a commonality?</p>
       </div>
       <div>
       { answers.map((a, i) => {
