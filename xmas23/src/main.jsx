@@ -5,6 +5,7 @@ import Match4 from './Match4.jsx'
 import Stackandqueue from './Stackandqueue.jsx'
 import Math12 from './Math12.jsx'
 import Carols from './Carols.jsx'
+import Gifts from './Gifts.jsx'
 import './index.css'
 import {
   createHashRouter,
@@ -31,6 +32,10 @@ const router = createHashRouter([
   {
     path: "/math12",
     element: <Math12 />
+  },
+  {
+    path: "/gifts",
+    element: <Gifts />
   },
 ]);
 

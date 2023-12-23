@@ -179,7 +179,7 @@ function Match4() {
       //       return JSON.stringify(s);
       //   })
       }
-      { showNext && <div className="next"><Link to="/">Next</Link></div>  }
+      { showNext && <div className="next"><Link to="/gifts">Next</Link></div>  }
       </div>
     </>
   )
