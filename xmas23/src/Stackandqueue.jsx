@@ -17,7 +17,7 @@ function Stackandqueue() {
   const handleSubmit = (e) => {
     //alert(queue.join() == "g,r,i,n,c,h")
     //alert(queue.join() == "s,l,e,i,g,h")
-    setShowNext(queue.join() == "s,l,e,i,g,h")
+    setShowNext((queue.join() == "s,l,e,i,g,h") || (stack.join() == "s,l,e,i,g,h"))
   }
   const handleReset = (e) => {
     setStack([])
@@ -26,13 +26,17 @@ function Stackandqueue() {
   }
 
   const handleStackButton = (e) => {
-    setQueue([...queue, stack[0]])
-    setStack(stack.slice(1))
+    if(stack.length > 0){
+      setQueue([...queue, stack[0]])
+      setStack(stack.slice(1))
+    }
   }
 
   const handleQueueButton = (e) => {
-    setStack([queue[0], ...stack ])
-    setQueue(queue.slice(1))
+    if(queue.length > 0){
+      setStack([queue[0], ...stack ])
+      setQueue(queue.slice(1))
+    }
   }
 
   return (
