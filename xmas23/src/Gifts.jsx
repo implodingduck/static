@@ -39,8 +39,8 @@ function Gifts() {
   return (
     <>
       <div>
-        <h2>Its time for Presents!</h2>
-        <p>Thank you for playing.</p>
+        <h2>Thank you for playing!</h2>
+        <p>Do you want to open presents?</p>
         <fieldset>
           <label>Name: <input type="text" value={name} onChange={handleNameChange} /></label>
         </fieldset>
