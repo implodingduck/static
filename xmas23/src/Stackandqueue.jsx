@@ -39,6 +39,7 @@ function Stackandqueue() {
     <>
       <div>
         <h2>Present Bag and Elves</h2>
+        <p>To get into character the Grinch recreated Santa's present bag and elves toy factory...</p>
         <p>When Santa grabs a present from his bag, he takes the first one off of the top, regardless of how long a present has been in the bag.</p>
         <p>The Elves work in an orderly fashion where items need to wait until the item before them is complete before processing.</p>
         {

@@ -17,6 +17,7 @@ function Math12() {
     <>
       <div className="math12">
         <h2>Twelve Days of Math-mas</h2>
+        <p>Looks like the Grinch has been stealing Christmas for 12 days...</p>
         <p><span>A = </span><img src="tdom12.png" /><span> / </span><img src="tdom3.png" /></p>
         <p><span>B = </span><img src="tdom11.png" /><span> * </span><img src="tdom2.png" /></p>
         <p><span>C = </span><img src="tdom10.png" /><span> + </span><img src="tdom1.png" /></p>

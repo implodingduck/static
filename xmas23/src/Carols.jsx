@@ -25,7 +25,7 @@ function Carols() {
   return (
     <>
       <div className="carols">
-        <h2>The Grinch Wwho Stole Lyrics</h2>
+        <h2>The Grinch Who Stole Lyrics</h2>
         <p>Uh oh! The Grinch stole lyrics from several Christmas carols... you will have to put them back.</p>
 
         <p>He could laugh and <input type="text" value={frosty}  onChange={(e) => setFrosty(e.target.value) } /><br />
